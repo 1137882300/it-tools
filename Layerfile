@@ -18,5 +18,5 @@ RUN apt-get update && \
 COPY . .
 
 RUN docker build -t image .
-RUN docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest
-EXPOSE WEBSITE http://localhost:80
+RUN docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest 
+EXPOSE WEBSITE http://localhost:8080
